@@ -17,16 +17,17 @@ div {
     width: 100px;
     height: 100px;
     background-color: red;
-    
     border-radius: 100px;
 }
 
 .x {
     animation: x 9s linear infinite alternate;
+    animation-delay: -68s;
 }
 
 .y {
     animation: y 7s linear infinite alternate;
+    animation-delay: -11s;
 }
 
 @keyframes x {
@@ -39,4 +40,17 @@ div {
     100% {
         transform: translateY( calc(100vh - 100px) );
     }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.circle {
+    animation: flicker 2s ease infinite alternate;
 }
