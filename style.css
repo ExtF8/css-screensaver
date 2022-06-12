@@ -35,7 +35,7 @@ body {
 
 .y {
     animation: y 14s linear infinite alternate;
-    animation-delay: -11s;
+    /* animation-delay: -11s; */
 }
 
 @keyframes x {
@@ -50,12 +50,13 @@ body {
     }
 }
 
-
-
 .around-tw {
-  display: inline-block;
-  /* position: relative; */
-  width: 100%; 
+    display: inline-block;
+    /* position: relative; */
+    /* width: 600px; 
+    height: 600px; */
+    width: 100%;
+    height: 100%;
 }
 
 .around-tw div {
@@ -67,6 +68,7 @@ body {
     animation: around-tw 10s cubic-bezier(0.27, 0.53, 0.5, 0.55) infinite,
     change-color 4s infinite;
 }
+
 .around-tw div:nth-child(1) {
     animation-delay: 0s;
     top: 37px;
@@ -144,8 +146,8 @@ body {
 .around-tw-1 {
   /* display: inline-block; */
   /* position: relative; */
-    width: 500px;
-    height: 500x;
+    width: 100%;
+    height: 100%;
 }
 .around-tw-1 div {
     position: absolute;
@@ -235,4 +237,12 @@ body {
     2% { background-color: hotpink; }
     50% { background-color: blueviolet;}
     98% { background-color: purple; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  60% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
 }
