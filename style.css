@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     position: fixed;
     width: 100%;
@@ -9,15 +10,11 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 } 
 
-
-
 .bg {
     height: 100%;
     animation: change-color ease-in 69s infinite;
     /* background: radial-gradient(lightskyblue, lightpink); */
 }
-
-
 
 .x,
 .y {
@@ -34,7 +31,6 @@ body {
 .x {
     animation: x 13s linear infinite alternate;
     animation-delay: -68s;
-    
 }
 
 .y {
